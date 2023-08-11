@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_INTF" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOINTERF>
+    <CLSNAME>ZIF_ABAP_ALV_SETTINGS</CLSNAME>
+    <LANGU>L</LANGU>
+    <DESCRIPT>ALV Settings</DESCRIPT>
+    <EXPOSURE>2</EXPOSURE>
+    <STATE>1</STATE>
+    <UNICODE>X</UNICODE>
+   </VSEOINTERF>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_EVENTS</CMPNAME>
+     <LANGU>L</LANGU>
+     <DESCRIPT>Get ALV  Events to set</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_EXTEND_OUTTAB</CMPNAME>
+     <LANGU>L</LANGU>
+     <DESCRIPT>Extend OUTTAB</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_TOOLBAR_FUNCTIONS</CMPNAME>
+     <LANGU>L</LANGU>
+     <DESCRIPT>Get Toolbar Functions</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

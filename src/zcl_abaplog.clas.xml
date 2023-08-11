@@ -11,6 +11,123 @@
     <FIXPT>X</FIXPT>
     <UNICODE>X</UNICODE>
    </VSEOCLASS>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CMPNAME>CHANGE_EXTNUMBER</CMPNAME>
+     <LANGU>L</LANGU>
+     <DESCRIPT>Change Log extern number</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>CREATE_LOG</CMPNAME>
+     <LANGU>L</LANGU>
+     <DESCRIPT>Create Log</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>FILL_MESSAGE</CMPNAME>
+     <LANGU>L</LANGU>
+     <DESCRIPT>Fill Log message from structure</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_EXCEPTION_LIST</CMPNAME>
+     <LANGU>L</LANGU>
+     <DESCRIPT>Get exception list</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_INSTANCE</CMPNAME>
+     <LANGU>L</LANGU>
+     <DESCRIPT>Get Log instance</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_LOGHNDL</CMPNAME>
+     <LANGU>L</LANGU>
+     <DESCRIPT>Returns log handle</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_MESSAGE_HANDLES</CMPNAME>
+     <LANGU>L</LANGU>
+     <DESCRIPT>Get message handles by message type</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+   <DESCRIPTIONS_SUB>
+    <SEOSUBCOTX>
+     <CMPNAME>CHANGE_EXTNUMBER</CMPNAME>
+     <SCONAME>IV_EXT_ID</SCONAME>
+     <LANGU>L</LANGU>
+     <DESCRIPT>Log aplikacji: identyfikacja zewnętrzna</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CREATE_LOG</CMPNAME>
+     <SCONAME>IS_CONTEXT</SCONAME>
+     <LANGU>L</LANGU>
+     <DESCRIPT>Log aplikacji: kontekst</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CREATE_LOG</CMPNAME>
+     <SCONAME>IS_LOG</SCONAME>
+     <LANGU>L</LANGU>
+     <DESCRIPT>Log aplikacji: dane nagłówka logu</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CREATE_LOG</CMPNAME>
+     <SCONAME>IS_PARAMS</SCONAME>
+     <LANGU>L</LANGU>
+     <DESCRIPT>Log aplikacji: Parametry</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CREATE_LOG</CMPNAME>
+     <SCONAME>IV_EXTNUMBER</SCONAME>
+     <LANGU>L</LANGU>
+     <DESCRIPT>Log aplikacji: identyfikacja zewnętrzna</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CREATE_LOG</CMPNAME>
+     <SCONAME>IV_OBJECT</SCONAME>
+     <LANGU>L</LANGU>
+     <DESCRIPT>Protokół aplikacji: Nazwa obiektu (Kod aplikacji)</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CREATE_LOG</CMPNAME>
+     <SCONAME>IV_SUBOBJECT</SCONAME>
+     <LANGU>L</LANGU>
+     <DESCRIPT>Log aplikacji: Obiekt podrzędny</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>FILL_MESSAGE</CMPNAME>
+     <SCONAME>CS_MESSAGE</SCONAME>
+     <LANGU>L</LANGU>
+     <DESCRIPT>Log aplikacji: dane komunikatu</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_EXCEPTION_LIST</CMPNAME>
+     <SCONAME>IV_IMPORTANCE</SCONAME>
+     <LANGU>L</LANGU>
+     <DESCRIPT>Log aplikacji: klasa problemu komunikatu</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_EXCEPTION_LIST</CMPNAME>
+     <SCONAME>IV_TYPE</SCONAME>
+     <LANGU>L</LANGU>
+     <DESCRIPT>Rodzaj komunikatu</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_LOGHNDL</CMPNAME>
+     <SCONAME>RV_LOGHNDL</SCONAME>
+     <LANGU>L</LANGU>
+     <DESCRIPT>Log aplikacji: Uchwyt logu</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_MESSAGE_HANDLES</CMPNAME>
+     <SCONAME>IV_MSGTY</SCONAME>
+     <LANGU>L</LANGU>
+     <DESCRIPT>Rodzaj komunikatu</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_MESSAGE_HANDLES</CMPNAME>
+     <SCONAME>RT_MESSAGE_HANDLES</SCONAME>
+     <LANGU>L</LANGU>
+     <DESCRIPT>Log aplikacji: tabela z uchwytami komunikatów</DESCRIPT>
+    </SEOSUBCOTX>
+   </DESCRIPTIONS_SUB>
   </asx:values>
  </asx:abap>
 </abapGit>

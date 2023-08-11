@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_INTF" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOINTERF>
+    <CLSNAME>ZIF_ABAP_REPORT_CONTROLLER</CLSNAME>
+    <LANGU>L</LANGU>
+    <DESCRIPT>ABAP Report Controller</DESCRIPT>
+    <EXPOSURE>2</EXPOSURE>
+    <STATE>1</STATE>
+    <UNICODE>X</UNICODE>
+   </VSEOINTERF>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CMPNAME>EXECUTE_REPORT</CMPNAME>
+     <LANGU>L</LANGU>
+     <DESCRIPT>Execute Report Logic</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_MODEL</CMPNAME>
+     <LANGU>L</LANGU>
+     <DESCRIPT>Get Model Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_VIEW</CMPNAME>
+     <LANGU>L</LANGU>
+     <DESCRIPT>Get View Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>O_MODEL</CMPNAME>
+     <LANGU>L</LANGU>
+     <DESCRIPT>Model</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>O_VIEW</CMPNAME>
+     <LANGU>L</LANGU>
+     <DESCRIPT>View</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+   <DESCRIPTIONS_SUB>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_MODEL</CMPNAME>
+     <SCONAME>RO_MODEL</SCONAME>
+     <LANGU>L</LANGU>
+     <DESCRIPT>ABAP Report Model</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_VIEW</CMPNAME>
+     <SCONAME>RO_VIEW</SCONAME>
+     <LANGU>L</LANGU>
+     <DESCRIPT>ABAP Report View</DESCRIPT>
+    </SEOSUBCOTX>
+   </DESCRIPTIONS_SUB>
+  </asx:values>
+ </asx:abap>
+</abapGit>

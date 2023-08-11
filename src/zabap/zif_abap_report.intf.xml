@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_INTF" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOINTERF>
+    <CLSNAME>ZIF_ABAP_REPORT</CLSNAME>
+    <LANGU>L</LANGU>
+    <DESCRIPT>ABAP Report Interface</DESCRIPT>
+    <EXPOSURE>2</EXPOSURE>
+    <STATE>1</STATE>
+    <UNICODE>X</UNICODE>
+   </VSEOINTERF>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CMPNAME>GUI_STATUS</CMPNAME>
+     <LANGU>L</LANGU>
+     <DESCRIPT>Malarz menu: kod statusu</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GUI_TITLE</CMPNAME>
+     <LANGU>L</LANGU>
+     <DESCRIPT>Malarz menu: kod tytułu</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>RAISE_PBO</CMPNAME>
+     <LANGU>L</LANGU>
+     <DESCRIPT>Raise PBO Event</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>RAISE_UC</CMPNAME>
+     <LANGU>L</LANGU>
+     <DESCRIPT>Raise UC Event</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>UC_BACK</CMPNAME>
+     <LANGU>L</LANGU>
+     <DESCRIPT>Back</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>UC_EXIT</CMPNAME>
+     <LANGU>L</LANGU>
+     <DESCRIPT>Exit</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>UC_LOG_HIST</CMPNAME>
+     <LANGU>L</LANGU>
+     <DESCRIPT>SHow Log History</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>UC_SHOW_LOG</CMPNAME>
+     <LANGU>L</LANGU>
+     <DESCRIPT>Show Log</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>UC_TOP</CMPNAME>
+     <LANGU>L</LANGU>
+     <DESCRIPT>Top</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+   <DESCRIPTIONS_SUB>
+    <SEOSUBCOTX>
+     <CMPNAME>RAISE_UC</CMPNAME>
+     <SCONAME>IV_UCOMM</SCONAME>
+     <LANGU>L</LANGU>
+     <DESCRIPT>Pole systemowe ABAP: Kod funkcji, który wyzwolił proces PAI</DESCRIPT>
+    </SEOSUBCOTX>
+   </DESCRIPTIONS_SUB>
+  </asx:values>
+ </asx:abap>
+</abapGit>

@@ -1,0 +1,22 @@
+class ZCL_ABAP_ALV_SETTINGS_DFLT definition
+  public
+  create public .
+
+public section.
+
+  interfaces ZIF_ABAP_ALV_SETTINGS .
+
+  aliases GET_EVENTS
+    for ZIF_ABAP_ALV_SETTINGS~GET_EVENTS .
+  aliases GET_EXTEND_OUTTAB
+    for ZIF_ABAP_ALV_SETTINGS~GET_EXTEND_OUTTAB .
+  aliases GET_TOOLBAR_FUNCTIONS
+    for ZIF_ABAP_ALV_SETTINGS~GET_TOOLBAR_FUNCTIONS .
+protected section.
+private section.
+ENDCLASS.
+
+
+
+CLASS ZCL_ABAP_ALV_SETTINGS_DFLT IMPLEMENTATION.
+ENDCLASS.
