@@ -273,6 +273,9 @@ CLASS ZCL_ABAP_ALV IMPLEMENTATION.
         <ff>-no_out    = abap_true.
         assign fieldcat_temp[ fieldname = lo_fcat->fieldname ] to field-symbol(<fieldname_source>).
         <fieldname_source>-decmlfield = 'WEIGHT_DEC'.
+        <fieldname_source>-tech_form  = '10'.
+        <fieldname_source>-indx_decml = '50'.
+        clear <fieldname_source>-decimals_o.
       endif.
 
 
@@ -858,5 +861,12 @@ CLASS ZCL_ABAP_ALV IMPLEMENTATION.
 
   method ZIF_ABAP_ALV~SET_SETTINGS.
     mo_alv_settings = io_settings.
+  endmethod.
+
+
+  method ZIF_ABAP_ALV~GET_QUAN_FIELDS.
+
+    rt_fcat = value #( for hotspot in mt_fcat where (  datatype = 'QUAN' ) ( hotspot ) ).
+
   endmethod.
 ENDCLASS.

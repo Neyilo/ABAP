@@ -31,10 +31,11 @@ interface zif_abap_alv_settings
   types: begin of ty_hotspot,
            fieldname type string,
            domname   type string,
-           priority  type string,
+           priority  type int4,
            active    type abap_bool,
            erp       type abap_bool,
            ewm       type abap_bool,
+           text      type string,
          end of ty_hotspot.
 
   types: tty_hotspot type hashed table of ty_hotspot with unique key fieldname domname.
@@ -51,9 +52,11 @@ interface zif_abap_alv_settings
            filter          type LVC_T_FILT,
            sort            type lvc_t_sort,
            print           type LVC_S_PRNT,
-           toolbar_cfunc   type ui_functions,
+           toolbar_cfunc   type ttb_button,
            toolbar_efunc   type ui_functions,
+
          end of ty_settings.
+
 
   methods get_toolbar_functions .
   methods get_extend_outtab .

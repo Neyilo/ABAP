@@ -225,6 +225,69 @@ CLASS ZCL_ABAP_ALV_EVENT_HANDLER IMPLEMENTATION.
 
     break gdziezyk.
 
+    data: file_header type xstring,
+          file_length type i,
+          file_binary type solix_tab.
+
+    data: lo_excel_ref TYPE REF TO cl_fdt_xl_spreadsheet.
+
+    call function 'GUI_UPLOAD'
+      exporting
+        filename                = files
+        filetype                = 'BIN'
+      importing
+        filelength              = file_length
+        header                  = file_header
+      tables
+        data_tab                = file_binary
+      exceptions
+        file_open_error         = 1
+        file_read_error         = 2
+        no_batch                = 3
+        gui_refuse_filetransfer = 4
+        invalid_type            = 5
+        no_authority            = 6
+        unknown_error           = 7
+        bad_data_format         = 8
+        header_not_allowed      = 9
+        separator_not_allowed   = 10
+        header_too_long         = 11
+        unknown_dp_error        = 12
+        access_denied           = 13
+        dp_out_of_memory        = 14
+        disk_full               = 15
+        dp_timeout              = 16
+        others                  = 17.
+
+    check sy-subrc = 0.
+
+
+    CALL FUNCTION 'SCMS_BINARY_TO_XSTRING'
+      EXPORTING
+        input_length = file_length
+      IMPORTING
+        buffer       = file_header
+      TABLES
+        binary_tab   = file_binary
+      EXCEPTIONS
+        failed       = 1
+        OTHERS       = 2.
+
+    try .
+        lo_excel_ref = new cl_fdt_xl_spreadsheet(
+                                document_name = files
+                                xdocument     = file_header ) .
+      catch cx_fdt_excel_core into data(lo_excp).
+    endtry.
+
+    lo_excel_ref->if_fdt_doc_spreadsheet~get_worksheet_names(
+        IMPORTING
+          worksheet_names = DATA(lt_worksheets) ).
+
+    return.
+
+    break gdziezyk.
+
     do.
 
       if 1 = 2.

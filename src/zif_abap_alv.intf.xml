@@ -87,6 +87,11 @@
      <DESCRIPT>Get Quick Info</DESCRIPT>
     </SEOCOMPOTX>
     <SEOCOMPOTX>
+     <CMPNAME>GET_QUAN_FIELDS</CMPNAME>
+     <LANGU>L</LANGU>
+     <DESCRIPT>Get ALV Quan fields</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
      <CMPNAME>GET_SETTINGS</CMPNAME>
      <LANGU>L</LANGU>
      <DESCRIPT>Get ALV Creation Settings</DESCRIPT>
@@ -197,6 +202,12 @@
      <SCONAME>RT_QINFO</SCONAME>
      <LANGU>L</LANGU>
      <DESCRIPT>Tabela dla szybkiej informacji wyjątku</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_QUAN_FIELDS</CMPNAME>
+     <SCONAME>RT_FCAT</SCONAME>
+     <LANGU>L</LANGU>
+     <DESCRIPT>Katalog pól dla przeglądu listy</DESCRIPT>
     </SEOSUBCOTX>
     <SEOSUBCOTX>
      <CMPNAME>GET_SETTINGS</CMPNAME>

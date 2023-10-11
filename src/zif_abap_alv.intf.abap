@@ -69,4 +69,7 @@ interface ZIF_ABAP_ALV
   methods GET_SETTINGS
     returning
       value(RO_SETTINGS) type ref to ZIF_ABAP_ALV_SETTINGS .
+  methods GET_QUAN_FIELDS
+    returning
+      value(RT_FCAT) type LVC_T_FCAT .
 endinterface.

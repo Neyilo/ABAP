@@ -49,6 +49,7 @@ CLASS ZCL_REPORT_CONTROLLER IMPLEMENTATION.
 
 
   method CONSTRUCTOR.
+
     gui_status = 'ALV_GUI'.
     gui_title  = 'ALV_TITLE'.
 
@@ -75,6 +76,7 @@ CLASS ZCL_REPORT_CONTROLLER IMPLEMENTATION.
   method zif_abap_report~raise_pbo.
 
     if mo_alv_fullscreen is not bound.
+
       data(lo_base_container) = new cl_gui_custom_container( container_name = 'BASE_CONTAINER' ).
 
       mo_alv_fullscreen = new zcl_abap_alv( io_parent = lo_base_container ).
